@@ -1,0 +1,264 @@
+@import "normalize";
+@import "layout";
+
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Roboto:300,400,700');
+
+body{
+	background-color: #3B3747;
+	font: 300 24px/1 , Roboto sans-serif;
+	color: #fff;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1060px;
+	@media (max-width: 768px) {
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	
+}
+
+
+
+/* Typography */
+h1, h2, h3, h4, h5, {
+	margin: 0;
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	text-decoration: none;
+}
+
+.ba-category-link {
+	color: #ffc7b0;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	&:hover {
+		color: #FCDF8E;
+	}
+}
+
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	min-width: 126px;
+	padding: 10px;
+	border: 3px solid #FCDF8E;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.ba-button-fill {
+	background-color: #FCDF8E;
+	min-width: 93px;
+	color: #393847;
+	
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background-color: #FCDF8E;
+	color: #393847;
+}
+.ba-button-fill:hover {
+	background: none;
+	color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+
+.ba-header {
+	margin: 60px 0 70px;
+	display: flex;
+	justify-content: space-between;
+	color: #827F8B;
+	font-size: 12px;
+	font-weight: 700;
+	
+}
+
+.ba-content--lamps {
+	background: #B0A9BA url(../img/lamps.jpg) 50% no-repeat;
+	background-size: cover;	
+	p {
+		font-size: 36px;
+		font-weight: 300;
+		@media (max-width: 768px -1px) {
+			font-size: 18px;
+		}
+	}
+}
+
+.ba-content--headphones {
+	background: #7ABFCB url(../img/headphone.jpg) 50% no-repeat;
+	background-size: cover;	
+	p {
+		margin-bottom: 190px;
+		font-size: 24px;
+		@media (max-width: 768px -1px) {
+			font-size: 18px;
+		}
+	}
+}
+
+.ba-content--mono {
+	background-color: #EB7B61;
+	font-family: "Old Standart TT", serif;
+	font-weight: 400;
+	padding-top: 30px;
+	padding-right: 30px;
+	text-align: center;
+	p {
+		margin-top: 23px;
+		margin-bottom: 37px;
+	}
+	
+
+	.ba-subscribe-form {
+		display: flex;
+		flex-direction: column;
+		max-width: 284px;
+		padding-left: 15px;
+		padding-bottom: 28px;
+
+		input {
+			border: 3px solid #fff;
+			background: none;
+			color: #fff;
+			padding: 8px;
+
+		&::-webkit-input-placeholder {
+			color: #fff;
+			opacity: .8;
+			text-align: center;
+			font: 700 20px/1 Roboto, sans-serif;
+		}
+		}
+
+		button {
+			margin-top: 18px;
+			background-color: #66689C;
+			border: none;
+			font-family: Roboto, sans-serif;
+		}
+	}
+}
+
+.ba-content--camera1 {
+	background: #161616 url(../img/leica_m.jpg) 50% no-repeat;
+	background-size: cover;	
+	min-height: 422px;
+	
+	&__info {
+		text-align: center;	
+		margin-left: -25px;
+		.ba-light-title {
+			margin: 136px 0 114px;
+		}
+	}	
+}
+
+.ba-content--speaker {
+	background: #696058 url(../img/trobla.jpg) 50% no-repeat;
+	background-size: cover;	
+
+	&__info {
+		text-align: center;	
+		margin-left: -25px;
+	}
+	.ba-light-title {
+		display: block;
+		margin: 130px 0 78px;
+	}
+}
+
+.ba-content--camera2 {
+	background: #1AB467 url(../img/leica_d.jpg) 50% no-repeat;
+	background-size: cover;	
+	
+	p {
+		margin-bottom: 185px;
+		font-size: 20px;
+	}
+	
+}
+
+.ba-col {
+	margin-left: 20px;
+	flex-grow: 1;
+}
+
+.ba-content {
+	padding: 36px 0 38px 41px;
+	@media (max-width: 768px -1px) {
+        padding: 16px 0 18px 10px
+    }
+	
+	&__info {
+		max-width: 300px;
+	}
+	&__info--short {
+		max-width: 220px;
+	}
+}
+
+.ba-main-title {
+	font-size: 72px;
+	margin: 16px 0;
+	@media (max-width: 768px -1px) {
+        font-size: 48px;
+    }
+}
+
+.ba-middle-title {
+	font-size: 48px;
+	@media (max-width: 768px -1px) {
+        font-size: 36px;
+    }
+}
+
+.ba-light-title {
+	font-size: 36px;
+	@media (max-width: 768px -1px) {
+        font-size: 28px;
+    }
+}
